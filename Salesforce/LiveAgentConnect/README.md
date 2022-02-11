@@ -1,17 +1,16 @@
 
 # LiveAgentConnect
 
-![image](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect.gif)   
-
-```如果停止 请刷新页面重新播放```
-![图片标题](https://leanote.com/api/file/getImage?fileId=5829392aab644165e50106e5)
+![image](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect.gif)
 
 [TOC]
 
 #LiveAgentConnect
+
 ##开发
+
 ###代码结构
-![title](https://leanote.com/api/file/getImage?fileId=582931a1ab644165e5010624)
+![title](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-1.jpg)
 
 ###程序设计
 WechatConnectEndpoint.java
@@ -68,16 +67,16 @@ logging.path log位置设置
 access_token_refresh_interval.setup  设置微信access_token刷新时间 默认3600000 
 
 **LiveAgent配置** 
-live_agent.endpoint [LiveAgentEnpoint设置](http://blog.leanote.com/post/maxtomb/LiveAgentConnect#p)
-live_agent.deployment_id [Deployment_ID设置](http://blog.leanote.com/post/maxtomb/LiveAgentConnect#p-1)
-live_agent.org_id [Org_ID设置](http://blog.leanote.com/post/maxtomb/LiveAgentConnect#title-4)
-live_agent.button_id [Button_ID设置](http://blog.leanote.com/post/maxtomb/LiveAgentConnect#title-5)
+live_agent.endpoint [LiveAgentEnpoint设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-2.jpg)
+live_agent.deployment_id [Deployment_ID设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-3.jpg)
+live_agent.org_id [Org_ID设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-4.jpg)
+live_agent.button_id [Button_ID设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-5.jpg)
 live_agent.api.version=37
 live_agent.nickname.prefix=微信: 
 
 **Salesforce配置**
-salesforce.clientid [ClientID设置](http://blog.leanote.com/post/maxtomb/LiveAgentConnect#title-6)
-salesforce.clientsecret [ClientSecret设置](http://blog.leanote.com/post/maxtomb/LiveAgentConnect#title-7)
+salesforce.clientid [ClientID设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-6.jpg)
+salesforce.clientsecret [ClientSecret设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-7.jpg)
 salesforce.username salesforce 用户设置
 salesforce.password salesforce 用户密码+token
 salesforce.restapi.version=v37.0
@@ -89,35 +88,35 @@ wechat.app_secret 微信app secret 设置
 
 ####LiveAgentEnpoint设置
 Setup -> Customize -> Live Agent -> Live Agent Setting
-![LiveAgentEnpoint设置](https://leanote.com/api/file/getImage?fileId=586efac9ab6441209e0082d7) 
+![LiveAgentEnpoint设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-8.jpg) 
 
 ####Deployment_ID设置
 Setup -> Customize -> Live Agent -> Deployments
-![Deployment_ID设置](https://leanote.com/api/file/getImage?fileId=586efbc8ab6441236e0081f3) 
+![Deployment_ID设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-9.jpg) 
 
 ####Org_ID设置
 Setup -> Company Profile -> Company Information
-![Org_ID设置](https://leanote.com/api/file/getImage?fileId=586efc55ab6441209e00833f) 
+![Org_ID设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-10.jpg) 
 
 ####Button_ID设置
 Setup -> Customize -> Live Agent -> ChatButtons & Invitations
-![Button_ID设置](https://leanote.com/api/file/getImage?fileId=586efd2fab6441236e00824a) 
+![Button_ID设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-11.jpg) 
 
 ####ClientID设置
 Setup -> Create -> App -> ConnectedApp
-![ClientID设置](https://leanote.com/api/file/getImage?fileId=586efe3fab6441236e0082b5) 
+![ClientID设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-12.jpg) 
 
 ####ClientSecret设置
 Setup -> Create -> App -> ConnectedApp
-![ClientSecret设置](https://leanote.com/api/file/getImage?fileId=586efedbab6441209e0083fa) 
+![ClientSecret设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-13.jpg) 
 
 ##测试
 使用HttpClient模拟微信推送 进行本地测试。
 请求细节如下
 1.确保mongodb数据库服务已经启动 27017端口已经开启
 2.在eclipse中LiveAgentConnect程序
-![在eclipse中LiveAgentConnect程序1](https://leanote.com/api/file/getImage?fileId=586f04c9ab6441209e0085fa)
-![在eclipse中LiveAgentConnect程序2](https://leanote.com/api/file/getImage?fileId=586f067cab6441209e008697)
+![在eclipse中LiveAgentConnect程序1](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-14.jpg)
+![在eclipse中LiveAgentConnect程序2](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-15.jpg)
 3.模拟微信推送请求
 POST https://localhost:8443/sfdc/msg
 ```
