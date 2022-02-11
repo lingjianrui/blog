@@ -134,15 +134,15 @@ POST https://localhost:8443/sfdc/msg
 然后再尝试模拟微信推送。
 
 ## 部署
-1.从github上下载下来源代码后 在代码根目录执行 mvn clean package 
-2.在target目录下执行(如下的这种执行方式会覆盖配置文件中的定义)
-java -jar liveagent.connect-0.0.1-SNAPSHOT.jar \
---live_agent.endpoint=xxxx.salesforceliveagent.com \
---live_agent.deployment_id=xxxxxxxx \
---live_agent.org_id=xxxxxxxx \
---live_agent.button_id=xxxxxxx \
---logging.path=/var/log \
---server.port=443
-3.确保你的服务器已经在微信公众号中配置成功。(能收到微信推送过来的消息)
-4.确保你的mongodb服务器运行正常
+1.从github上下载下来源代码后 在代码根目录执行 mvn clean package  
+2.在target目录下执行(如下的这种执行方式会覆盖配置文件中的定义)  
+java -jar liveagent.connect-0.0.1-SNAPSHOT.jar \  
+--live_agent.endpoint=xxxx.salesforceliveagent.com \  
+--live_agent.deployment_id=xxxxxxxx \  
+--live_agent.org_id=xxxxxxxx \  
+--live_agent.button_id=xxxxxxx \  
+--logging.path=/var/log \  
+--server.port=443  
+3.确保你的服务器已经在微信公众号中配置成功。(能收到微信推送过来的消息)  
+4.确保你的mongodb服务器运行正常  
 
