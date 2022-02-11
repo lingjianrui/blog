@@ -74,11 +74,11 @@ live_agent.api.version=37
 live_agent.nickname.prefix=微信:  
 
 **Salesforce配置**  
-salesforce.clientid [ClientID设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-6.jpg)
-salesforce.clientsecret [ClientSecret设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-7.jpg)
-salesforce.username salesforce 用户设置
-salesforce.password salesforce 用户密码+token
-salesforce.restapi.version=v37.0
+salesforce.clientid [ClientID设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-6.jpg)  
+salesforce.clientsecret [ClientSecret设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-7.jpg)  
+salesforce.username salesforce 用户设置  
+salesforce.password salesforce 用户密码+token  
+salesforce.restapi.version=v37.0  
 salesforce.sobject.name=Account  
 
 **Wechat配置**  
