@@ -5,14 +5,14 @@
 
 [TOC]
 
-#LiveAgentConnect
+# LiveAgentConnect
 
-##开发
+## 开发
 
-###代码结构
+### 代码结构
 ![title](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-1.jpg)
 
-###程序设计
+### 程序设计
 WechatConnectEndpoint.java
 
  - 用于接收wechat的推送消息
@@ -50,7 +50,7 @@ ScheduledTasks.java
  - 访问微信资源需要 微信的AccessToken
  - 这个程序 会根据配置定时更新AccessToken到mongodb 中去
 
-###配置说明
+### 配置说明
 配置文件src/main/resources/application.properties
 设置服务端口号也可以用--server.port=443在命令行后面修改该参数
 server.port = 8443
@@ -86,31 +86,31 @@ salesforce.sobject.name=Account
 wechat.app_id 微信app id设置
 wechat.app_secret 微信app secret 设置 
 
-####LiveAgentEnpoint设置
+#### LiveAgentEnpoint设置
 Setup -> Customize -> Live Agent -> Live Agent Setting
 ![LiveAgentEnpoint设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-8.jpg) 
 
-####Deployment_ID设置
+#### Deployment_ID设置
 Setup -> Customize -> Live Agent -> Deployments
 ![Deployment_ID设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-9.jpg) 
 
-####Org_ID设置
+#### Org_ID设置
 Setup -> Company Profile -> Company Information
 ![Org_ID设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-10.jpg) 
 
-####Button_ID设置
+#### Button_ID设置
 Setup -> Customize -> Live Agent -> ChatButtons & Invitations
 ![Button_ID设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-11.jpg) 
 
-####ClientID设置
+#### ClientID设置
 Setup -> Create -> App -> ConnectedApp
 ![ClientID设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-12.jpg) 
 
-####ClientSecret设置
+#### ClientSecret设置
 Setup -> Create -> App -> ConnectedApp
 ![ClientSecret设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-13.jpg) 
 
-##测试
+## 测试
 使用HttpClient模拟微信推送 进行本地测试。
 请求细节如下
 1.确保mongodb数据库服务已经启动 27017端口已经开启
@@ -133,7 +133,7 @@ POST https://localhost:8443/sfdc/msg
 请使用浏览器发送请求https://localhost:8443/sfdc/test 测试service是否运行正常
 然后再尝试模拟微信推送。
 
-##部署
+## 部署
 1.从github上下载下来源代码后 在代码根目录执行 mvn clean package 
 2.在target目录下执行(如下的这种执行方式会覆盖配置文件中的定义)
 java -jar liveagent.connect-0.0.1-SNAPSHOT.jar \
