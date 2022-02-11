@@ -116,9 +116,9 @@ Setup -> Create -> App -> ConnectedApp
 1.确保mongodb数据库服务已经启动 27017端口已经开启  
 2.在eclipse中LiveAgentConnect程序  
 ![在eclipse中LiveAgentConnect程序1](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-14.jpg) 
-![在eclipse中LiveAgentConnect程序2](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-15.jpg) 
-3.模拟微信推送请求 
-POST https://localhost:8443/sfdc/msg 
+![在eclipse中LiveAgentConnect程序2](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-15.jpg)  
+3.模拟微信推送请求  
+POST https://localhost:8443/sfdc/msg  
 ```
 <xml>
     <ToUserName>xiaoheiaa</ToUserName>
