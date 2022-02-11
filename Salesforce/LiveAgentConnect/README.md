@@ -111,14 +111,14 @@ Setup -> Create -> App -> ConnectedApp
 ![ClientSecret设置](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-13.jpg) 
 
 ## 测试
-使用HttpClient模拟微信推送 进行本地测试。
-请求细节如下
-1.确保mongodb数据库服务已经启动 27017端口已经开启
-2.在eclipse中LiveAgentConnect程序
-![在eclipse中LiveAgentConnect程序1](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-14.jpg)
-![在eclipse中LiveAgentConnect程序2](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-15.jpg)
-3.模拟微信推送请求
-POST https://localhost:8443/sfdc/msg
+使用HttpClient模拟微信推送 进行本地测试。 
+请求细节如下  
+1.确保mongodb数据库服务已经启动 27017端口已经开启  
+2.在eclipse中LiveAgentConnect程序  
+![在eclipse中LiveAgentConnect程序1](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-14.jpg) 
+![在eclipse中LiveAgentConnect程序2](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect-15.jpg) 
+3.模拟微信推送请求 
+POST https://localhost:8443/sfdc/msg 
 ```
 <xml>
     <ToUserName>xiaoheiaa</ToUserName>
