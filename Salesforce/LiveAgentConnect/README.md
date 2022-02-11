@@ -1,4 +1,3 @@
-
 # LiveAgentConnect
 ```图片显示不出来，请通过vpn访问```  
 ![image](https://github.com/lingjianrui/blog/blob/master/images/LiveAgentConnect.gif)
@@ -145,4 +144,3 @@ java -jar liveagent.connect-0.0.1-SNAPSHOT.jar \
 --server.port=443  
 3.确保你的服务器已经在微信公众号中配置成功。(能收到微信推送过来的消息)  
 4.确保你的mongodb服务器运行正常  
-
